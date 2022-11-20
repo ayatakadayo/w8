@@ -1,12 +1,13 @@
 let clock = null;
 
+    
+
+const digitalClock = ()=>{
     var today = newDate();
     var year = today.getFullYear();
     var month = today.getMonth();
     var day = today.getDate();
     console.log(year + '年' + month + '月' + day + '日');
-
-const digitalClock = ()=>{
     const now = new Date();
 
     const [hour, minute, second] = [now.getHours(), now.getMinutes(), now.getSeconds()];
