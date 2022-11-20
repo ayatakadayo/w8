@@ -5,13 +5,9 @@ let clock = null;
 const digitalClock = ()=>{
     // 現在時刻取得
     const now = new Date();
-    
-    const youbi = ["日","月","火","水","木","金","土"];
 
     // 時・分・秒取得
     const [hour, minute, second] = [now.getHours(), now.getMinutes(), now.getSeconds()];
-    // 日時取得
-    const [year, month, day] = [now.getFullYear(), now.getMonth()+1, now.getDate()];
 
     // 0埋め処理
     const [txtHour, txtMinute, txtSecond] = [
@@ -19,12 +15,6 @@ const digitalClock = ()=>{
         String(minute).padStart(2, "0"),
         String(second).padStart(2, "0"),
     ];
-    
-    const date = now.getFullYear() + "年" + 
-				(now.getMonth() + 1)  + "月" + 
-				now.getDate() + "日" + 
-				youbi[now.getDay()] + "曜日"
-	console.log(date);
 
     // 表示
     const txtDigitalClock = `${txtHour}:${txtMinute}:${txtSecond}`;
