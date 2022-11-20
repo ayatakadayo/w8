@@ -17,11 +17,11 @@ const digitalClock = ()=>{
         String(minute).padStart(2, "0"),
         String(second).padStart(2, "0"),
     ];
-    /*const [txtYear, txtMonth, txtDay] = [
+    const [txtYear, txtMonth, txtDay] = [
         String(year).padStart(2, "0"),
         String(month).padStart(2, "0"),
         String(day).padStart(2, "0"),
-    ];*/
+    ];
 
     // 表示
     const txtDigitalDate = `${txtYear}:${txtMonth}:${txtDay}`;
